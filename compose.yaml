@@ -1,0 +1,13 @@
+name: meineseite
+
+services:
+  webseite:
+    build: .
+    image: meineseite:2.0
+    ports:
+      - "8091:80"     
+
+  webseite-alt:
+    image: meineseite:1.0
+    ports:
+      - "8093:80"
